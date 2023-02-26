@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1636920819_55-bogatyr-club-p-fon-dlya-prilozheniya-55" translatesAutoresizingMaskIntoConstraints="NO" id="T68-Sx-JdL">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosign.app.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3xM-Vd-K84">
+                                <rect key="frame" x="120" y="63.666666666666657" width="150" height="117"/>
+                                <color key="tintColor" name="Color"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 ℃ " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNs-42-Qtm">
+                                <rect key="frame" x="111.66666666666667" y="236" width="160.33333333333331" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Anq-Pu-MUu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" name="Color"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hM-PS-fsD">
+                                <rect key="frame" x="151" y="323" width="88" height="28.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28.666666666666686" id="hPK-kO-pOS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemMintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feels like: 23 ℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebw-St-ZV1">
+                                <rect key="frame" x="125" y="197" width="157" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hv3-63-Y2H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pm-U1-7qd">
+                                <rect key="frame" x="327" y="47" width="50" height="35"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nNp-Gd-Agy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="T68-Sx-JdL" secondAttribute="bottom" id="8wT-KG-lqF"/>
+                            <constraint firstItem="T68-Sx-JdL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dy6-9s-aZO"/>
+                            <constraint firstItem="ebw-St-ZV1" firstAttribute="centerX" secondItem="6hM-PS-fsD" secondAttribute="centerX" constant="8.5" id="H12-qq-isi"/>
+                            <constraint firstItem="6hM-PS-fsD" firstAttribute="top" secondItem="JNs-42-Qtm" secondAttribute="bottom" constant="7" id="I4v-EL-iJ4"/>
+                            <constraint firstItem="T68-Sx-JdL" firstAttribute="centerX" secondItem="ebw-St-ZV1" secondAttribute="centerX" constant="-8.5" id="ImP-RM-Md4"/>
+                            <constraint firstItem="T68-Sx-JdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ju7-Pl-BHJ"/>
+                            <constraint firstItem="ebw-St-ZV1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124.66666666666669" id="MYA-uJ-bE8"/>
+                            <constraint firstItem="JNs-42-Qtm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uav-Bp-2Oc"/>
+                            <constraint firstAttribute="trailing" secondItem="T68-Sx-JdL" secondAttribute="trailing" id="WkL-JO-s2A"/>
+                            <constraint firstItem="1pm-U1-7qd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="c0x-3R-oh1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6hM-PS-fsD" secondAttribute="bottom" constant="458.33333333333331" id="g6U-y6-Qlg"/>
+                            <constraint firstItem="1pm-U1-7qd" firstAttribute="leading" secondItem="3xM-Vd-K84" secondAttribute="trailing" constant="57" id="mGm-uZ-8hu"/>
+                            <constraint firstItem="3xM-Vd-K84" firstAttribute="centerX" secondItem="ebw-St-ZV1" secondAttribute="centerX" constant="-8.5" id="mmd-yF-jBj"/>
+                            <constraint firstItem="JNs-42-Qtm" firstAttribute="top" secondItem="ebw-St-ZV1" secondAttribute="bottom" constant="15" id="qVf-go-wl2"/>
+                            <constraint firstItem="ebw-St-ZV1" firstAttribute="top" secondItem="3xM-Vd-K84" secondAttribute="bottom" constant="15" id="vQh-i8-CuO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNs-42-Qtm" secondAttribute="trailing" constant="118" id="vo3-u4-AYj"/>
+                            <constraint firstItem="3xM-Vd-K84" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="xaf-Ma-dwE"/>
+                            <constraint firstItem="3xM-Vd-K84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="xb6-ID-Ost"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="6hM-PS-fsD" id="Nba-hy-r3Z"/>
+                        <outlet property="cloudImage" destination="3xM-Vd-K84" id="bXO-QH-ouQ"/>
+                        <outlet property="feelsLikeLabel" destination="ebw-St-ZV1" id="Je1-cP-UHS"/>
+                        <outlet property="temprLabel" destination="JNs-42-Qtm" id="BdI-S3-pJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.153846153846153" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1636920819_55-bogatyr-club-p-fon-dlya-prilozheniya-55" width="1000" height="625"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="nosign.app.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="Color">
+            <color red="0.49799999594688416" green="0.34200000762939453" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
